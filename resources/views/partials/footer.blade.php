@@ -1,1 +1,1 @@
-<h2>Footer</h2>
+<h2 class="m-5">Footer</h2>

@@ -1,9 +1,18 @@
 @import "~bootstrap/scss/bootstrap";
-
-body {
-    background-image: url("../img/picsum16.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
+.card{
+    margin-inline: 20px;
+    height: 200px;
+    width: 200px;
+}
+.containerCard{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 150px;
+}
