@@ -1,9 +1,13 @@
 @extends('layouts.app');
 @section('content')
+
+
 @php
     $orgDate = 'movie->date';
     $newDate = date("d-m-Y", strtotime($orgDate));
 @endphp
+
+
 <h2 class="text-center text-danger">Movie</h2>
 <a href="/">Home</a>
 
@@ -19,6 +23,7 @@
                 <h5 class="card-title">{{ $movie->nationality }} </h5>
                 <h5 class="card-title">{{ $newDate }} </h5>
                 <h5 class="card-title">{{ $movie->vote }} </h5>
+
              </div>
         </div>
     </div>

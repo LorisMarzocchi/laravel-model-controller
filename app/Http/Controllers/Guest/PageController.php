@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Guest;
 
+// use Carbon\Carbon;
 use App\Models\Movie;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -10,10 +11,20 @@ class PageController extends Controller
 {
     public function movie() {
         $movies = Movie::all();
-        // dd($movies);
-        $orgDate = 'movie->date';
-        $newDate = date("d-m-Y", strtotime($orgDate));
+
+        // $orgDate = 'movie->date';
+        // $newDate = date("d-m-Y", strtotime($orgDate));
+        // $myDate = 'movie->date';
+
+        // foreach ($movies as $movie) {
+        //     $movie->formattedDate = Carbon::createFromFormat('Y-m-d', $movie->date)->format('d-m-Y');
+        // ------richiamare {{ $movie->formattedDate }} in HTML
+        // }
+
+        // dd($movie);
+
         return view('welcome', compact('movies'));
+
         // return view('welcome', [
         //                  'movies' => $movies,
         //                  'date' => $newDate,
